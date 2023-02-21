@@ -12,7 +12,7 @@ function CatCard() {
         />
       </figure>
       <Title size={TitleSize.SMALL}>Кошка Сью</Title>
-      <p className="cat-card__text">
+      <p>
         Эта юная красавица очень общительная и ласковая уже с первого дня, как
         приехала в кафе.
       </p>
