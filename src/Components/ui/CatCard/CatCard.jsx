@@ -1,12 +1,12 @@
 import React from "react";
 import Title, { TitleSize } from "../Title/Title";
-import "./CatCard.module.css";
+import styles from "./CatCard.module.scss";
 
 function CatCard() {
   return (
-    <div className="cat-card">
-      <figure className="cat-card__figure">
-        <img className="cat-card__image"
+    <div className={styles.cat_card}>
+      <figure className={styles.cat_card_figure}>
+        <img className={styles.cat_card_image}
           src="https://i.ibb.co/27Mdx7k/Rectangle-4-2.png"
           alt="Изображение кота"
         />

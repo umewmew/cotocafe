@@ -2,13 +2,13 @@ import React from "react";
 import Button from "../../ui/Button/Button";
 import CatCard from "../../ui/CatCard/CatCard";
 import Title, { TitleSize } from "../../ui/Title/Title";
-import "./CatsList.module.css";
+import styles from "./CatsList.module.scss";
 
 function CatsList({catInfo}) {
   return (
-    <section className="about-cats">
+    <section className={styles.about_cats}>
       <Title size={TitleSize.DEFAULT}>Наши звезды</Title>
-      <ul className="about-cats__list">
+      <ul className={styles.about_cats_list}>
         <li className="about-list__item">
           <CatCard />
         </li><li className="about-list__item">
