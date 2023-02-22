@@ -1,0 +1,20 @@
+.feature_icon {
+  position: absolute;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px 8px 8px 0;
+  color: #FFFFFF;
+  left: 0;
+  top: 0;
+
+  &_new {
+    background-color: #FFB334;
+  }
+
+  &_soft {
+    background-color: #7FC92E;
+  }
+
+  &_empty {
+    display: none;
+  }
+}

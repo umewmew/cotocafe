@@ -6,10 +6,10 @@ import CatsList from "../../blocks/CatsList/CatsList";
 
 function Main() {
   return (
-    <div>
+    <>
       <About />
       <CatsList catInfo={CatCardList}/>
-    </div>
+    </>
   );
 }
 

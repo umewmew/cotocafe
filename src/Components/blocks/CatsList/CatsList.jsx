@@ -2,22 +2,24 @@ import React from "react";
 import Button from "../../ui/Button/Button";
 import CatCard from "../../ui/CatCard/CatCard";
 import Title, { TitleSize } from "../../ui/Title/Title";
-import "./CatsList.module.css";
+import styles from "./CatsList.module.scss";
 
-function CatsList({catInfo}) {
+function CatsList({ catInfo }) {
   return (
-    <section className="about-cats">
-      <Title size={TitleSize.DEFAULT}>Наши звезды</Title>
-      <ul className="about-cats__list">
-        <li className="about-list__item">
-          <CatCard />
-        </li><li className="about-list__item">
-          <CatCard />
-        </li><li className="about-list__item">
-          <CatCard />
-        </li>
-      </ul>
-      <Button minWidth={353}>Купить билет</Button>
+    <section className={styles.about_cats}>
+      {catInfo?.length ? (
+        <>
+          <Title size={TitleSize.DEFAULT}>Наши звезды</Title>
+          <ul className={styles.about_cats_list}>
+            {catInfo.map((cat) => (
+              <li key={cat.id}>
+                <CatCard {...cat} />
+              </li>
+            ))}
+          </ul>
+          <Button minWidth={353}>Купить билет</Button>
+        </>
+      ) : null}
     </section>
   );
 }

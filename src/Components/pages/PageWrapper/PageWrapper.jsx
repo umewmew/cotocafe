@@ -3,14 +3,13 @@ import Footer from "../../layout/Footer/Footer";
 import Header from "../../layout/Header/Header";
 import Main from "../Main/Main";
 import styles from "./PageWrapper.module.scss";
-import clsx from "clsx";
 
 
 function PageWrapper() {
   return (
     <>
       <Header />
-      <main className={clsx(styles.page_wrapper)}>
+      <main className={styles.page_wrapper_main}>
       <Main />
       </main>
       <Footer />

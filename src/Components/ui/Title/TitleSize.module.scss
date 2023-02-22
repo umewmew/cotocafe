@@ -1,0 +1,17 @@
+.title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  line-height: 41px;
+  font-size: 36px;
+
+  &_small {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  &_big {
+    font-size: 44px;
+    line-height: 51px;
+  }
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import "./Button.module.css";
+import styles from "./Button.module.scss";
 
 function Button({ children, minWidth }) {
   return (
     <a href="#">
-      <button className="button" type="button" style={{ minWidth: minWidth }}>
+      <button className={styles.button} type="button" style={{ minWidth: minWidth }}>
         {children}
       </button>
     </a>

@@ -1,0 +1,21 @@
+.about_cats {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 90px 80px 90px;
+  background-color: #FFEEAD;
+  align-items: center;
+
+  &_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+
+    padding-bottom: 24px;
+  }
+  // TODO: добавить стили для карточки
+  // &_item {
+
+  // }
+}
